@@ -1,0 +1,23 @@
+@SuperHeroApi_HostAddress = https://localhost:7143
+
+GET {{SuperHeroApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{SuperHeroApi_HostAddress}}/api/superhero
+
+###
+
+PUT {{SuperHeroApi_HostAddress}}/api/superhero
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Spider Man",
+  "firstName": "Peter",
+  "lastName": "Parker",
+  "place": "New York City"
+}
+
+###
